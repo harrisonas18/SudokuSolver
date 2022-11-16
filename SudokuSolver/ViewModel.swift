@@ -18,7 +18,9 @@ class ViewModel: ObservableObject {
     
     func solveSudoku(grid: [String]) -> [String]? {
         //Call validateInput so we can be sure every square has a number between 1-9
-        
+        if !validateInput(grid: grid) {
+            return nil
+        }
         let solved = SudokuSolver()
         guard let grid = solved.solveSudokuBoard(gridArray: grid) else { return nil }
         return grid
@@ -28,7 +30,7 @@ class ViewModel: ObservableObject {
         return ["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]
     }
     
-    func vaildateInput(grid: [String]) -> Bool {
+    func validateInput(grid: [String]) -> Bool {
         //Make sure every square has a number between 1-9 or "" empty string
         //Return true or false if input is formatted correctly
         for string in grid {
