@@ -75,12 +75,15 @@ struct ContentView: View {
                         .cornerRadius(.infinity)
                 }
                 Button {
-                    sudokuViewModel.showHowTo()
+                    sudokuViewModel.showingHowToView = true
                 } label: {
                     Text("How To Use Sudoku Solver")
                         .foregroundColor(.gray)
                         .fontWeight(.bold)
                         .font(.system(size: 16))
+                }
+                .popover(isPresented: $sudokuViewModel.showingHowToView){
+                    HowToUseView()
                 }
             }
             Spacer()

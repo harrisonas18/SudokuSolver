@@ -19,6 +19,7 @@
 		812412B2292161CD006D6E63 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812412B1292161CD006D6E63 /* ViewModel.swift */; };
 		812412B429216284006D6E63 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812412B329216284006D6E63 /* Extensions.swift */; };
 		812412BC2922A75E006D6E63 /* SudokuSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812412BB2922A75E006D6E63 /* SudokuSolverTests.swift */; };
+		812412C42925B237006D6E63 /* HowToUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812412C32925B237006D6E63 /* HowToUseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		812412B329216284006D6E63 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		812412B92922A75E006D6E63 /* SudokuSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudokuSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		812412BB2922A75E006D6E63 /* SudokuSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuSolverTests.swift; sourceTree = "<group>"; };
+		812412C32925B237006D6E63 /* HowToUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				812412B029204206006D6E63 /* Info.plist */,
-				81241281291F0359006D6E63 /* ContentView.swift */,
+				812412C22925B205006D6E63 /* Views */,
 				812412B329216284006D6E63 /* Extensions.swift */,
 				812412AA2920095C006D6E63 /* GridPosition.swift */,
 				812412AE292034E0006D6E63 /* SudokuSolver.swift */,
 				8124127F291F0359006D6E63 /* SudokuSolverApp.swift */,
-				812412AC29200D65006D6E63 /* TextFieldWithInputView.swift */,
 				812412B1292161CD006D6E63 /* ViewModel.swift */,
 				81241283291F035C006D6E63 /* Assets.xcassets */,
 				81241288291F035C006D6E63 /* SudokuSolver.entitlements */,
@@ -154,6 +155,16 @@
 				812412BB2922A75E006D6E63 /* SudokuSolverTests.swift */,
 			);
 			path = SudokuSolverTests;
+			sourceTree = "<group>";
+		};
+		812412C22925B205006D6E63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				812412AC29200D65006D6E63 /* TextFieldWithInputView.swift */,
+				81241281291F0359006D6E63 /* ContentView.swift */,
+				812412C32925B237006D6E63 /* HowToUseView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 				812412AB2920095C006D6E63 /* GridPosition.swift in Sources */,
 				812412B2292161CD006D6E63 /* ViewModel.swift in Sources */,
 				812412AD29200D65006D6E63 /* TextFieldWithInputView.swift in Sources */,
+				812412C42925B237006D6E63 /* HowToUseView.swift in Sources */,
 				812412B429216284006D6E63 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

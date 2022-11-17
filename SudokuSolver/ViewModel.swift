@@ -14,6 +14,7 @@ class ViewModel: ObservableObject {
     @Published var didFail = false
     @Published var gridArray: [GridPosition] = Array(repeating: GridPosition(position: ""), count: 81)
     @Published var gridArrayStrings: [String] = Array(repeating: String(), count: 81)
+    @Published var showingHowToView = false
     let columns = Array(repeating: GridItem(.adaptive(minimum: 35.0), spacing: 0), count: 9)
     
     func solveSudoku(grid: [String]) -> [String]? {
@@ -43,9 +44,5 @@ class ViewModel: ObservableObject {
         }
         return true
     }
-    
-    func showHowTo() {
-        //Show popover to user with instructions
-        
-    }
+
 }
