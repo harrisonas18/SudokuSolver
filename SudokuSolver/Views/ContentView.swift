@@ -30,11 +30,11 @@ struct ContentView: View {
                 }
             }
             if sudokuViewModel.didSucceed {
-                Text("Success")
+                Text("✅ Success")
                     .foregroundColor(.green)
             }
             if sudokuViewModel.didFail {
-                Text("Error with input, check board & try again.")
+                Text("❌ Error with input, check board & try again.")
                     .foregroundColor(.red)
             }
             Spacer()
